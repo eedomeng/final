@@ -10,4 +10,9 @@ public class TestController {
 	public String test() {
 		return "/html/index";
 	}
+	
+	@GetMapping("/register")
+	public String register() {
+		return "/html/register-animal";
+	}
 }
