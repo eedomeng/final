@@ -10,11 +10,11 @@ public class PetController {
 
 	@GetMapping("regist")
 	public String petRegist() {
-		return "/html/register-animal";
+		return "/html/pet-register";
 	}
 	
 	@GetMapping("modify")
 	public String petModify() {
-		return "/html/animal-modify";
+		return "/html/pet-modify";
 	}
 }

@@ -40,6 +40,7 @@
 		<link rel="stylesheet" href="../assets/vendor/css/core.css" class="template-customizer-core-css" />
 		<link rel="stylesheet" href="../assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
 		<link rel="stylesheet" href="../assets/css/demo.css" />
+		<link rel="stylesheet" href="../assets/css/status.css" />
 		
 		<!-- Vendors CSS -->
 		<link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
@@ -171,13 +172,13 @@
 			                    <div data-i18n="Account">page</div>
 			                  </a>
 			                </li>
-			                <li class="menu-item">
-			                  <a href="pages-account-settings-notifications.html" class="menu-link">
+			                  <li class="menu-item">
+			                  <a href="/pet/regiter" class="menu-link">
 			                    <div data-i18n="Notifications">status</div>
 			                  </a>
 			                </li>
 			                <li class="menu-item">
-			                  <a href="pages-account-settings-connections.html" class="menu-link">
+			                  <a href="/pet/modify" class="menu-link">
 			                    <div data-i18n="Connections">settings</div>
 			                  </a>
 			                </li>
@@ -283,56 +284,102 @@
 				<!-- / Navbar -->
 
 				<!-- Content wrapper -->
-				<div class="content-wrapper">
+				<div class="content-wrapper ">
 					
 				
 					<!-- / Content -->
 					<label> 날짜 : <input name="regDate" type="date"> </label><br>
 					
+					<div class="daily" >
 					
+					<div class="calender">
 					
+					<table border ="2">
+    <!-- caption은 표 위에 생기는 제목 -->
+    <caption> 2023.03 </caption>
+    
+    <tr>
+        <td>SUN</td>
+        <td>MON</td>
+        <td>TUE</td>
+        <td>WED</td>
+        <td>THU</td>
+        <td>FRI</td>
+        <td>SAT</td>
+    </tr>
+    <tr>
+        <td colspan="3"></td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+    </tr>
+    <tr>
+       <td>5</td>
+        <td>6</td>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+        <td>10</td>
+        <td>11</td>
+    </tr>
+    <tr>
+        <td>12</td>
+        <td>13</td>
+        <td>14</td>
+        <td>15</td>
+        <td>16</td>
+        <td>17</td>
+        <td>18</td>
+    </tr>
+    <tr>
+       <td>19</td>
+        <td>20</td>
+        <td>21</td>
+        <td>22</td>
+        <td>23</td>
+        <td>24</td>
+        <td>25</td>
+    </tr>
+    <tr>
+        <td>26</td>
+        <td>27</td>
+        <td>28</td>
+        <td>29</td>
+        <td>30</td>
+        <td>31</td>
+    </tr>
+</table>
 					
-					
-	</div>
-					
-<script>
-			
-			var chart = c3.generate({
-			    bindto: '#chart',
-			    data: {
-			      columns: [
-			        ['data1', 30, 200, 100, 400, 150, 250],
-			        ['data2', 50, 20, 10, 40, 15, 25]
-			      ],
-			      axes: {
-			        data2: 'y2' // ADD
-			      }
-			    },
-			    axis: {
-			      y2: {
-			        show: true // ADD
-			      }
-			    }
-			});
-			
-			
-			
-</script>		
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
+</div>		
 
+
+ <div class="mb-3 col-md-2" >
+ 
+<h3>2023.03.06</h3>
+                  <label for="zipCode" class="form-label">Meal (number/ g)</label>
+                  <input type="text" class="form-control" id="meal" name="meal" placeholder="5g" maxlength="10"/>
+                 
+                  <label for="zipCode" class="form-label">Water (number/ ml)</label>
+                  <input type="text" class="form-control" id="water" name="water" placeholder="100ml" maxlength="10"/>
+                  
+                   <label for="zipCode" class="form-label">Take a Walk (number/ km)</label>
+                  <input type="text" class="form-control" id="walk" name="walk" placeholder="10km" maxlength="10"/>
+                  
+                    <label for="zipCode" class="form-label">Snack (number)</label>
+                  <input type="text" class="form-control" id="snack" name="snack" placeholder="10km" maxlength="10"/>
+                  
+                    <label for="zipCode" class="form-label">Weight (number/ kg)</label>
+                  <input type="text" class="form-control" id="weight" name="weight" placeholder="5kg" maxlength="10"/>
+                  
+                <button type="submit" class="btn btn-primary me-2">Register</button> 
+                  
+             </div>
+                 
+				</div>
+				
+	
+		
 					<!-- Footer -->
 					<footer class="content-footer footer bg-footer-theme">
 						<div
