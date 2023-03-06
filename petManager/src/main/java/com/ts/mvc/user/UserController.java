@@ -12,4 +12,9 @@ public class UserController {
 	public String login() {
 		return "/html/login";
 	}
+		
+	@GetMapping("register")
+	public String register() {
+		return "/html/register";
+	}
 }

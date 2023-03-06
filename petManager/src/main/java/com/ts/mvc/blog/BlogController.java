@@ -22,4 +22,10 @@ public class BlogController {
 	public String status() {
 		return "/html/status";
 	}
+	
+	@GetMapping("")
+	public String blog() {
+		return "/html/blog";
+	}
+
 }
