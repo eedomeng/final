@@ -3439,49 +3439,7 @@ fieldset:disabled .btn {
 
 /* 직접 작업한 영역 시작 */
 
-.question-btn {
-  margin-bottom: 25px;
-}
 
-.question-answer {
-  margin-bottom: 25px;
-}
-
-.info-wrap {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.chatGpt-area {
-  margin-top: 25px;
-}
-
-.walk-btn {
-  margin: auto;
-}
-
-
-.dog-img {
-  background-color: #992323;
-}
-
-.carousel-item>img {
-  height: 100%;
-}
-
-.sub-contents {}
-
-
-.info-wrap {
-  display: flex;
-}
-
-.weather-date {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-}
 
 
 
