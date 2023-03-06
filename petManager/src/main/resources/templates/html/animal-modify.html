@@ -312,143 +312,153 @@
 				<!-- / Navbar -->
 
 				<!-- Content wrapper -->
-<div class="content-wrapper">
-  <!-- Content -->
-  <div class="container-xxl flex-grow-1 container-p-y">
-    <div class="row">
-      <div class="col-md-12">
-        <ul class="nav nav-pills flex-column flex-md-row mb-3">
-          <li class="nav-item">
-            <a class="nav-link active" href="javascript:void(0);"><i class="fa-solid fa-paw"></i> Register</a>
-          </li>
-        </ul>
-        <div class="card mb-4">
-          <h5 class="card-header">Profile Details</h5>
-          <!-- Account -->
-          <div class="card-body">
-            <div class="d-flex align-items-start align-items-sm-center gap-4">
-              <img
-                src="../assets/img/avatars/puppy.jpg"
-                alt="user-avatar"
-                class="d-block rounded"
-                height="100"
-                width="100"
-                id="uploadedAvatar"
-              />
-              <div class="button-wrapper">
-                <label for="upload" class="btn btn-primary me-2 mb-4" tabindex="0">
-                  <span class="d-none d-sm-block">Upload new photo</span>
-                  <i class="bx bx-upload d-block d-sm-none"></i>
-                  <input
-                    type="file"
-                    id="upload"
-                    class="account-file-input"
-                    hidden
-                    accept="image/png, image/jpeg"
-                  />
-                </label>
-                <button type="button" class="btn btn-outline-secondary account-image-reset mb-4">
-                  <i class="bx bx-reset d-block d-sm-none"></i>
-                  <span class="d-none d-sm-block">Reset</span>
-                </button>
-                <p class="text-muted mb-0">Allowed JPG, GIF or PNG. Max size of 800K</p>
-              </div>
+				<div class="content-wrapper">
+					
+					</div>
+					<!-- / Content -->
+					
+<div class="container-xxl flex-grow-1 container-p-y">
+  <div class="row">
+    <div class="col-md-12">
+      <ul class="nav nav-pills flex-column flex-md-row mb-3">
+        <li class="nav-item">
+          <a class="nav-link active" href="javascript:void(0);"><i class="fa-solid fa-paw"></i> Modify</a>
+        </li>
+      </ul>
+      <div class="card mb-4">
+        <h5 class="card-header">Profile Details</h5>
+        <!-- Account -->
+        <div class="card-body">
+          <div class="d-flex align-items-start align-items-sm-center gap-4">
+            <img
+              src="../assets/img/avatars/puppy.jpg"
+              alt="user-avatar"
+              class="d-block rounded"
+              height="100"
+              width="100"
+              id="uploadedAvatar"
+            />
+            <div class="button-wrapper">
+              <label for="upload" class="btn btn-primary me-2 mb-4" tabindex="0">
+                <span class="d-none d-sm-block">Upload new photo</span>
+                <i class="bx bx-upload d-block d-sm-none"></i>
+                <input
+                  type="file"
+                  id="upload"
+                  class="account-file-input"
+                  hidden
+                  accept="image/png, image/jpeg"
+                />
+              </label>
+              <button type="button" class="btn btn-outline-secondary account-image-reset mb-4">
+                <i class="bx bx-reset d-block d-sm-none"></i>
+                <span class="d-none d-sm-block">Reset</span>
+              </button>
+              <p class="text-muted mb-0">Allowed JPG, GIF or PNG. Max size of 800K</p>
             </div>
           </div>
-          <hr class="my-0" />
-          <div class="card-body">
-            <form id="formAccountSettings" method="POST" onsubmit="return false">
-              <div class="row">
+        </div>
+        
+        <hr class="my-0" />
+        <div class="card-body">
+          <form id="formAccountSettings" method="POST" onsubmit="return false">
+            <div class="row">
+              <div class="mb-3 col-md-6">
+                <label for="firstName" class="form-label">Name</label>
+                <input
+                  class="form-control"
+                  type="text"
+                  id="firstName"
+                  name="firstName"
+                  placeholder="Please write your name"
+                  autofocus
+                />
+              </div>
+              
+              <div class="mb-3 col-md-6">
+                <label for="lastName" class="form-label">Birth Date</label>
+                <input class="form-control" type="text" name="Birth Date" id="Birth Date" value="YYY
+              </div>
+              <div class="mb-3 col-md-6">
+                <label for="Companion Animal" class="form-label">Companion Animal</label>
+                <button type="button" class="btn btn-outline-secondary account-image-reset mb-4">
+                  <i class="fa-solid fa-dog"></i>
+                  <span class="d-none d-sm-block">Dog</span>
+                </button>
+                <button type="button" class="btn btn-outline-secondary account-image-reset mb-4">
+                  <i class="fa-solid fa-cat"></i>
+                  <span class="d-none d-sm-block">Cat</span>
+                </button>
+              </div>
+              
                 <div class="mb-3 col-md-6">
-                  <label for="firstName" class="form-label">Name</label>
-                  <input
-                    class="form-control"
-                    type="text"
-                    id="firstName"
-                    name="firstName"
-                    placeholder="Please write your name"
-                    autofocus
-                  />
-                </div>
-                <div class="mb-3 col-md-6">
-                  <label for="lastName" class="form-label">Birth Date</label>
-                  <input class="form-control" type="text" name="Birth Date" id="Birth Date" value="YYYY.MM.DD" />
-                </div>
-                <div class="mb-3 col-md-6">
-                  <label for="Companion Animal" class="form-label">Companion Animal</label>
-                  <button type="button" class="btn btn-outline-secondary account-image-reset mb-4">
-                    <i class="fa-solid fa-dog"></i>
-                    <span class="d-none d-sm-block">Dog</span>
-                  </button>
-                  <button type="button" class="btn btn-outline-secondary account-image-reset mb-4">
-                    <i class="fa-solid fa-cat"></i>
-                    <span class="d-none d-sm-block">Cat</span>
-                  </button>
-                </div>
-                  <div class="mb-3 col-md-6">
-                    <label for="Species" class="form-label">Species</label>
-                    <select id="Species" class="select2 form-select">
-                      <option value="">Select Species</option>
-                      <option value="beagle">beagle</option>
-                      <option value="Maltese">Maltese</option>
-                      <option value="Dachshund">Dachshund</option>
-                    </select>
-                  </div>
-                <div class="mb-3 col-md-6">
-                  <label class="form-label" for="Gender">Gender</label>
-                    <button type="button" class="btn btn-outline-secondary account-image-reset mb-4">
-                      <i class="fa-solid fa-mars"></i>
-                      <span class="d-none d-sm-block">Male</span>
-                    </button>
-                    <button type="button" class="btn btn-outline-secondary account-image-reset mb-4">
-                      <i class="fa-solid fa-venus"></i>
-                      <span class="d-none d-sm-block">Woman</span>
-                    </button>  
-                </div>
-                <div class="mb-3 col-md-6">
-                  <label for="Neutralization" class="form-label">Neutralization</label>
-                  <button type="button" class="btn btn-outline-secondary account-image-reset mb-4">
-                    <i class="fa-solid fa-square-check"></i>
-                    <span class="d-none d-sm-block">O</span>
-                  </button>
-                  <button type="button" class="btn btn-outline-secondary account-image-reset mb-4">
-                    <i class="fa-solid fa-square-xmark"></i>
-                    <span class="d-none d-sm-block">X</span>
-                </div>
-                <div class="mb-3 col-md-6">
-                  <label for="Registration number" class="form-label">Registration number</label>
-                  <input class="form-control" type="text" id="Registration number" name="Registration number" placeholder="Registration number" />
-                </div>
-                <div class="mb-3 col-md-6">
-                  <label for="zipCode" class="form-label">Meal (number/ g)</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="number"
-                    name="number"
-                    placeholder="5g"
-                    maxlength="6"
-                  />
+                  <label for="Species" class="form-label">Species</label>
+                  <select id="Species" class="select2 form-select">
+                    <option value="">Select Species</option>
+                    <option value="beagle">beagle</option>
+                    <option value="Maltese">Maltese</option>
+                    <option value="Dachshund">Dachshund</option>
+                  </select>
                 </div>
                 
-                <div class="mb-3 col-md-6">
-                  <label class="form-label" for="Personality">Personality</label>
-                  <br>
-                  <form>
-                    <!-- for 저 글씨를 눌러도 체크박스에 체크가 되게 해줌 -->
-                    <label for="friendly">friendly</label><input type="checkbox" value="friendly" id="friendly" name="Personality"><br>
-                    <label for="shy">shy</label><input type="checkbox" value="shy" id="shy" name="Personality"><br>
-                    <label for="energetic">energetic</label><input type="checkbox" value="energetic" id="energetic" name="Personality"><br>
-                    
-                </form>
-                </div>
+              <div class="mb-3 col-md-6">
+                <label class="form-label" for="Gender">Gender</label>
+                  <button type="button" class="btn btn-outline-secondary account-image-reset mb-4">
+                    <i class="fa-solid fa-mars"></i>
+                    <span class="d-none d-sm-block">Male</span>
+                  </button>
+                  <button type="button" class="btn btn-outline-secondary account-image-reset mb-4">
+                    <i class="fa-solid fa-venus"></i>
+                    <span class="d-none d-sm-block">Woman</span>
+                  </button>  
               </div>
-              <div class="mt-2">
-                <button type="submit" class="btn btn-primary me-2">Register Animal</button>
-                <button type="reset" class="btn btn-outline-secondary">Cancel</button>
+              
+              <div class="mb-3 col-md-6">
+                <label for="Neutralization" class="form-label">Neutralization</label>
+                <button type="button" class="btn btn-outline-secondary account-image-reset mb-4">
+                  <i class="fa-solid fa-square-check"></i>
+                  <span class="d-none d-sm-block">O</span>
+                </button>
+                <button type="button" class="btn btn-outline-secondary account-image-reset mb-4">
+                  <i class="fa-solid fa-square-xmark"></i>
+                  <span class="d-none d-sm-block">X</span>
               </div>
-            </form>
-          </div>
+              
+              <div class="mb-3 col-md-6">
+                <label for="Registration number" class="form-label">Registration number</label>
+                <input class="form-control" type="text" id="Registration number" name="Registration 
+              </div>
+              <div class="mb-3 col-md-6">
+                <label for="zipCode" class="form-label">Meal (number/ g)</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="number"
+                  name="number"
+                  placeholder="5g"
+                  maxlength="6"
+                />
+              </div>
+              
+              <div class="mb-3 col-md-6">
+                <label class="form-label" for="Personality">Personality</label>
+                <br>
+                <form>
+                  <!-- for 저 글씨를 눌러도 체크박스에 체크가 되게 해줌 -->
+                  <label for="friendly">friendly</label><input type="checkbox" value="friendly" id="
+                  <label for="shy">shy</label><input type="checkbox" value="shy" id="shy" name="Pers
+                  <label for="energetic">energetic</label><input type="checkbox" value="energetic" id="energetic" name="Personality"><br>
+                  
+              </form>
+              </div>
+            </div>
+            <div class="mt-2">
+              <button type="submit" class="btn btn-primary me-2">Register Animal</button>
+              <button type="reset" class="btn btn-outline-secondary">Cancel</button>
+            </div>
+          </form>
+        </div>
+
 					<!-- Footer -->
 					<footer class="content-footer footer bg-footer-theme">
 						<div

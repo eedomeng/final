@@ -11,8 +11,4 @@ public class TestController {
 		return "/html/index2";
 	}
 	
-	@GetMapping("/register")
-	public String register() {
-		return "/html/register-animal";
-	}
 }
