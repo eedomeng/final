@@ -124,14 +124,14 @@
 					<div class="container-xxl flex-grow-1 container-p-y">
             <div class="row">
 							<!-- Weather & Fine dust start -->
-							<div class="col-8">
+							<div class="col-12">
 								<div class="card">
 									<div class="row row-bordered g-0">
 										<div class="col-md-8">
-											<h5 class="card-header m-0 me-2 pb-3">Weather & Fine dust</h5>
-											
+											<h1 class="card-header m-0 me-2 pb-3">Weather & Fine dust Area</h1>
                       <div class="info-wrap container">
-                        <div id="weather-info">
+												<div id="weather-info">
+													<p class="card-text h2">오늘은 산책가기 좋은 날!</p>
                           <ul>
                             <li>5.3 'C</li>
                             <li>어제보다 3'C 높아요</li>
@@ -149,23 +149,30 @@
                         </div>
                       </div>
 										</div>
-										
 									</div>
 								</div>
 							</div>
-              <!-- Weather & Fine dust end -->
-           
-              <div class="col-4">
-                <div class="card h-100">
-                  <div class="walk-btn">
-                    <button class="btn btn-primary" type="button">산책가기</button>
-                  </div>
-                </div>
-              </div>
-
-
             </div>
+						<!-- Weather & Fine dust end -->
 
+
+						<!-- Health Status Dash Board Area start-->
+						<div class="container-xxl flex-grow-1 container-p-y">
+							<div class="row">
+								<div class="card">
+									<div class="card-text h1">Health status</div>
+									<hr>
+									<div class="card-title">title</div>
+									<div class="card-subtitle">subtitle</div>
+									<div class="card-body">body</div>
+								</div>
+							</div>
+						</div>
+
+
+
+
+						<!-- Health Status Dash Board Area end -->
 
             <!-- Chat GPT Area -->
             <div class="row chatGpt-area">
@@ -173,8 +180,9 @@
               <div class="col-12 question-btn">
                 <div class="card h-100">
 
+									<p class="card-text h1">Chat GPT Area</p>
                   <div class="form-floating">
-                    <textarea class="form-control" placeholder="말티즈가 밥을 안먹을 때 어떻게 해야하나요?" id="floatingTextarea2" style="height: 100px"></textarea>
+										<textarea class="form-control" placeholder="말티즈가 밥을 안먹을 때 어떻게 해야하나요?" id="floatingTextarea2" style="height: 100px"></textarea>
                     <label for="floatingTextarea2">여기를 클릭하세요!</label>
                   </div>
                   <div class="d-grid gap-1 ">
@@ -184,36 +192,45 @@
                 
               </div>
               
-						<div class="row question-answer">
 							<!-- AI 답변 영역 시작 -->
+						<div class="row question-answer">
               <div class="col-12">
-                <div class="card" style="height: 100px;">
+                	<div class="card" style="height: 200px;">
                   답변을 출력할 영역입니다.
-                </div>
-              </div>
+               	 </div>
+              	</div>
+							</div>
 						</div>
 					</div>
           <!-- AI 답변 영역 종료 -->
         
-          <div class="row recommend-dog">
-            <div class="col-12">
-              <div class="card" style="max-width: 540px;">
-                <div class="row g-0">
-                  <div class="col-4">
-                    <img src="..." class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
+						<div class="row sub-contents">
+							<div class="col-8">
+								<div class="card">
+									<div class="row g-0">
+										<div class="col-4">
+											<img src="..." class="img-fluid rounded-start" alt="...">
+										</div>
+										<div class="col-8">
+											<div class="card-body">
+												<h5 class="card-title">양천구 콩순이</h5>
+												<p class="card-text">#남 #으르렁 #으르렁대 #3살 #사교적</p>
+												<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+												<p class="card-text"><button class="btn btn-primary">실시간 채팅하기</button></p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-4 walking-btn">
+										<div class="card h-100">
+											<div class="walk-btn">
+												<button class="btn btn-primary" type="button">산책가기</button>
+											</div>
+										</div>
+									</div>
+						</div>
+					
 
 
 
