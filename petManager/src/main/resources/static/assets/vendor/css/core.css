@@ -3470,12 +3470,18 @@ fieldset:disabled .btn {
   height: 100%;
 }
 
-.sub-contents {
+.sub-contents {}
+
+
+.info-wrap {
   display: flex;
 }
 
-
-
+.weather-date {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
 
 
 
