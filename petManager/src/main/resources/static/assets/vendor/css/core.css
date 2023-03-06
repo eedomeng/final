@@ -3443,14 +3443,32 @@ fieldset:disabled .btn {
   margin-bottom: 25px;
 }
 
+.question-answer {
+  margin-bottom: 25px;
+}
+
+.info-wrap {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.chatGpt-area {
+  margin-top: 25px;
+}
+
+.walk-btn {
+  margin: auto;
+}
 
 
+.dog-img {
+  background-color: #992323;
+}
 
-
-
-
-
-
+.carousel-item>img {
+  height: 100%;
+}
 
 
 

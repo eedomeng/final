@@ -8,7 +8,7 @@ public class TestController {
 
 	@GetMapping("/")
 	public String test() {
-		return "/html/index2";
+		return "/html/index";
 	}
 	
 	@GetMapping("/register")
