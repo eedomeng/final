@@ -17,4 +17,9 @@ public class BlogController {
 	public String diary() {
 		return "/html/diary";
 	}
+	
+	@GetMapping("status")
+	public String status() {
+		return "/html/status";
+	}
 }
