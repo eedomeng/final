@@ -15,6 +15,11 @@ public class UserController {
 		
 	@GetMapping("register")
 	public String register() {
-		return "/html/register";
+		return "/html/user-register";
+	}
+	
+	@GetMapping("modify")
+	public String userModify() {
+		return "/html/user-modify";
 	}
 }

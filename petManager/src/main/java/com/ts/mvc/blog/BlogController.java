@@ -7,6 +7,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("blog")
 public class BlogController {
+	
+	@GetMapping("")
+	public String blog() {
+		return "/html/blog";
+	}
 
 	@GetMapping("guestbook")
 	public String guestbook() {
@@ -21,11 +26,6 @@ public class BlogController {
 	@GetMapping("status")
 	public String status() {
 		return "/html/status";
-	}
-	
-	@GetMapping("")
-	public String blog() {
-		return "/html/blog";
 	}
 
 }
